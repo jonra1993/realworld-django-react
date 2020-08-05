@@ -31,3 +31,10 @@ python manage.py startapp authentication-api
 ## Create Superuser (admin : admin)
 
     python manage.py createsuperuser
+
+## jwt
+https://jwt.io/
+
+https://simpleisbetterthancomplex.com/tutorial/2018/12/19/how-to-use-jwt-authentication-with-django-rest-framework.html
+
+https://simpleisbetterthancomplex.com/tutorial/2018/12/19/how-to-use-jwt-authentication-with-django-rest-framework.html
