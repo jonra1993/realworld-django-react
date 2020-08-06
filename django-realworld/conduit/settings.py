@@ -44,8 +44,10 @@ INSTALLED_APPS = [
     'rest_framework',
     
     # project apps
-    'authentication_api.apps.AuthenticationApiConfig'
-
+    'authentication_api.apps.AuthenticationApiConfig',
+    'core.apps.CoreConfig',
+    'profiles_api.apps.ProfilesApiConfig',
+    'articles_api.apps.ArticlesApiConfig',
 ]
 
 MIDDLEWARE = [
