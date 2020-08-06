@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     # 3rd party apps
     'corsheaders',
     'rest_framework',
-    
+    'phonenumber_field',
+
     # project apps
     'authentication_api.apps.AuthenticationApiConfig',
     'core.apps.CoreConfig',
@@ -51,6 +52,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -143,7 +146,8 @@ SIMPLE_JWT = {
 
 CORS_ALLOW_CREDENTIALS = True # to accept cookies via ajax request
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000' # the domain for front-end app(you can add more than 1) 
+    'http://localhost:3000', # the domain for front-end app(you can add more than 1) 
+    'http://localhost:4100'
 ]
 
 REST_FRAMEWORK = {
